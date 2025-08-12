@@ -36,5 +36,41 @@ C - Controla a Tela
 MVC - apresentação de regas e negocios.
 
 
+# Aula 3
+
+O Princípio da Inversão de Dependência diz que módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações (interfaces ou classes abstratas). Além disso, as abstrações não devem depender de detalhes, e sim os detalhes das abstrações. Isso reduz o acoplamento entre componentes, tornando o código mais flexível, testável e fácil de manter. Com o DIP, você consegue trocar implementações sem alterar a lógica principal do sistema, favorecendo a reutilização e evolução do código. É um dos princípios SOLID que ajuda a criar sistemas desacoplados e bem organizados.
+
+
+Princípio da inversão da Dependência 
+
+O Controller não liga direto na implementação, ele comunica com a interface primeiro
+
+Evitar que uma classe fale diretamente com a outra 
+
+Prefira composição a Herança 
+
+Quando a gente deve usar herança?
+R:     Animal
+Gato    	Cachorro
+
+Um gato nunca se tornará um cachorro, ou vice-versa.
+Quando a relação não for estritamente hierárquica, prefira composição, ou seja, construir comportamentos combinando diferentes objetos, em vez de criar cadeias de herança profundas.
+
+A composição oferece mais flexibilidade, evita acoplamento excessivo e facilita a reutilização de código.
+
+--//--
+
+Princípio de Demeter (Menor Conhecimento)
+Também chamado de Law of Demeter.
+A ideia é evitar dependências desnecessárias e não acessar diretamente objetos internos de outros objetos.
+Fuja de variáveis globais e trabalhe com as informações locais e disponíveis no contexto atual.
+
+  --/--
+  
+Princípio do Aberto/Fechado (Open/Closed Principle)
+Um objeto deve proteger seu comportamento para que ninguém possa quebrá-lo alterando diretamente sua lógica interna.
+A ideia é que quem cria a classe não quer que ela seja modificada, mas sim estendida com novas funcionalidades.
+
+
 
 
