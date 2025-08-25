@@ -71,6 +71,99 @@ Princípio do Aberto/Fechado (Open/Closed Principle)
 Um objeto deve proteger seu comportamento para que ninguém possa quebrá-lo alterando diretamente sua lógica interna.
 A ideia é que quem cria a classe não quer que ela seja modificada, mas sim estendida com novas funcionalidades.
 
+  --//-- 
+
+  FB = A(esquerda) - A(direita)
+A = 1 + max(AfilhoEsquerdo, AfilhoDireito)
+
+40 - 20 - 60 - 10 - 30 - 25
+
+Nó: 40
+Raiz?: nulo
+Nó inserido: raiz = 40
+A = 1
+Fb = 0
+
+Nó: 20
+raiz?: menor que 40
+Nó inserido: raiz.filhoEsquerdo = 20
+A = 1
+Fb = 0
+Volta, nó 40:
+    A = 2
+    Fb = 1
+
+
+função inserir(No noAtual, int valor, No noPai) {
+    No novoNo = new No(valor);
+
+    if noAtual == null {
+        noAtual = novoNo
+    }
+
+    if noAtual.fb > 1 {
+
+    }
+
+    if valor < noAtual.valor {
+        noAtual.filhoEsquerdo = novoNo
+    }
+    if valor > noAtual.valor {
+        noAtual.filhoDireito = novoNo
+    }
+
+    return novoNo
+
+}
+
+----
+
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+  "name": "Java",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/dapr/cli/dapr-cli:0": {},
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/aws-cli:1": {}
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "java -version",
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+  "appPort": [4000, 4200, 4433, 5000, 8080, 9876],
+  "extensions": [
+    "vscjava.vscode-java-pack",
+    "vmware.vscode-boot-dev-pack",
+    "humao.rest-client",
+    "ms-azuretools.vscode-docker",
+    "cweijan.vscode-database-client2",
+    "ms-vscode.vscode-node-azure-pack",
+    "ms-azuretools.vscode-dapr"
+  ]
+  //"hostRequirements": {
+  //	"cpus": 4,
+  //	"memory": "16gb"
+  //}
+}
+
+--//--
+
+
 
 
 
