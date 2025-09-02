@@ -165,5 +165,25 @@ função inserir(No noAtual, int valor, No noPai) {
 
 
 
+#Aula 02/09
 
+Resuma a diferençca entre: Arquitetura e Design
+
+A diferença entre arquitetura e design, muitas vezes, acaba ficando meio confusa, mas é algo essencial para quem quer pensar como arquiteto. O texto deixa bem claro que pensar como arquiteto não é só “pensar na arquitetura”, mas entender que arquitetura e design são coisas diferentes, que se complementam para resolver problemas técnicos e de negócio. A arquitetura está ligada ao quadro geral, ela tenta entender o que o negócio precisa, definir quais características o sistema deve ter, escolher os padrões e estilos certos para o problema e criar os grandes blocos que vão formar o sistema. Já o design é mais focado nos detalhes, na parte que a equipe de desenvolvimento vai cuidar: criar diagramas específicos, pensar nas telas, codificar e testar o software.
+
+O problema é que, a arquitetura e o design ficaram separados, quase como se vivessem em mundos diferentes. O arquiteto cria a arquitetura e passa para o desenvolvedor, que faz o design, e a comunicação vai só em um sentido. Isso gera vários problemas, porque o arquiteto acaba desconectado da realidade do desenvolvimento, e quando o desenvolvedor faz mudanças, o arquiteto nem sempre fica sabendo — uma situação que dificulta que a arquitetura realmente funcione. Por isso, o texto defende que a solução é quebrar essas barreiras, fazendo com que arquitetos e desenvolvedores trabalhem juntos como uma equipe, mantendo uma comunicação constante. No modelo a arquitetura e design não são fases separadas, mas partes do mesmo ciclo, que evoluem juntas durante o projeto.
+
+Então, a diferença entre arquitetura e design está no nível de foco e responsabilidade, mas para que o projeto dê certo, os dois precisam estar alinhados e colaborando o tempo todo.
+
+--//--
+
+Como é a formação do conhecimento de um arquiteto modelo T?
+
+A formação do conhecimento de um arquiteto modelo T é bem diferente da de um desenvolvedor normal. Enquanto o desenvolvedor normalmente precisa se aprofundar em uma ou poucas tecnologias para fazer seu trabalho, tipo conhecer uma linguagem, um framework ou uma ferramenta a fundo, o arquiteto precisa ter uma visão mais ampla das possibilidades técnicas. O texto usa a imagem da pirâmide para isso: existe o que você sabe bem, o que você sabe que não sabe direito, e o que você nem sabe que não sabe que, na verdade, é a maior parte do que existe por aí.
+
+No começo da carreira, o foco do desenvolvedor é justamente aumentar a parte do “o que você sabe” especializar para conseguir entregar soluções com qualidade. Já para o arquiteto, o ideal é ampliar muito o “meio da pirâmide”, ou seja, o que ele sabe que não sabe direito, para conhecer várias tecnologias, soluções e abordagens diferentes, mesmo que não domine todas profundamente. Isso ajuda a ter uma visão mais completa e saber quais opções escolher para cada problema.
+
+A ideia do arquiteto modelo T é: ter uma base mais larga de conhecimento, com um pouco de profundidade em algumas áreas específicas. Essa combinação permite que o arquiteto entenda bem o todo e ainda tenha domínio suficiente para tomar decisões acertadas e práticas.
+
+O texto também fala que muitos arquitetos acabam caindo em dois erros comuns: tentar ser especialista em tudo e não conseguir, ou ficar preso a conhecimentos antigos, sem se atualizar. Por isso, pensar como arquiteto é, em parte, saber abrir mão daquela especialização extrema em algumas tecnologias para ganhar uma visão mais ampla e atualizada, que realmente faça a diferença na hora de criar uma arquitetura que funcione para o negócio.
 
