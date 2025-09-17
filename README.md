@@ -188,14 +188,14 @@ Essas são as chamadas qualidades não funcionais: disponibilidade, escalabilida
 Aqui entram as boas práticas que ajudam a manter o sistema limpo e organizado. São as “regras de convivência” do software, que guiam o time e evitam bagunça no futuro.
 
 # O Papel do Arquiteto de Software
-.O arquiteto não é só “o cara que desenha caixinhas”. Ele tem responsabilidades bem práticas, como:
-.Tomar decisões difíceis: escolher tecnologias, justificar o porquê de cada decisão, pesar prós e contras.
-.Olhar para o código constantemente: identificar onde precisa refatorar e quando vale a pena mexer.
-.Estar sempre atualizado: acompanhar tendências, ver como novas tecnologias podem ajudar (ou atrapalhar).
-.Garantir que o time siga os padrões: não adianta só decidir, é preciso manter disciplina. Testes e revisões de código ajudam nisso.
-.Ter experiência e bagagem: boas decisões vêm muito da prática e de já ter passado por situações parecidas.
-.Conhecer o negócio: não adianta ser só técnico, precisa entender o contexto do cliente.
-.Saber lidar com pessoas: motivar, inspirar, negociar e até lidar com política dentro da empresa.
+- O arquiteto não é só “o cara que desenha caixinhas”. Ele tem responsabilidades bem práticas, como:
+- Tomar decisões difíceis: escolher tecnologias, justificar o porquê de cada decisão, pesar prós e contras.
+- Olhar para o código constantemente: identificar onde precisa refatorar e quando vale a pena mexer.
+- Estar sempre atualizado: acompanhar tendências, ver como novas tecnologias podem ajudar (ou atrapalhar).
+- Garantir que o time siga os padrões: não adianta só decidir, é preciso manter disciplina. Testes e revisões de código ajudam nisso.
+- Ter experiência e bagagem: boas decisões vêm muito da prática e de já ter passado por situações parecidas.
+- Conhecer o negócio: não adianta ser só técnico, precisa entender o contexto do cliente.
+- Saber lidar com pessoas: motivar, inspirar, negociar e até lidar com política dentro da empresa.
 
 # DevOps na Arquitetura
 Hoje em dia, não dá para falar de arquitetura sem citar DevOps. A ideia é simples: aproximar desenvolvimento e operações para entregar valor mais rápido ao cliente.
@@ -236,13 +236,13 @@ Sempre que se define uma arquitetura, não é possível atender a todas as deman
 Como se costuma dizer: “não existem respostas certas ou erradas, apenas compensações.”
 
 # Arquitetura baseada em tópicos
-.Funciona de forma semelhante a um grupo de família no WhatsApp
-.Segue um padrão parecido com o Observer:
-.Publisher → envia mensagens
-.Subscriber(s) → recebem mensagens (um ou muitos)
-.Os assinantes se inscrevem em um broker (tópico), que distribui as mensagens
-.Caso o tópico saia do ar no momento da entrega, a mensagem pode ser perdida
-.A inclusão de novos subscribers é simples, sem necessidade de mudanças na arquitetura
+- Funciona de forma semelhante a um grupo de família no WhatsApp
+- Segue um padrão parecido com o Observer:
+- Publisher → envia mensagens
+- Subscriber(s) → recebem mensagens (um ou muitos)
+- Os assinantes se inscrevem em um broker (tópico), que distribui as mensagens
+- Caso o tópico saia do ar no momento da entrega, a mensagem pode ser perdida
+- A inclusão de novos subscribers é simples, sem necessidade de mudanças na arquitetura
 
 # Vantagens:
 
