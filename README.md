@@ -125,7 +125,7 @@ public class Janelinha extends JFrame {
 
 # Aula 3 - 11/08/2025 
 
-# Princípio da Inversão de Dependência (Dependency Inversion Principle) Em vez de o Controller depender diretamente de uma implementação concreta, ele deve se comunicar primeiro com uma interface ou abstração. Isso evita o acoplamento direto entre classes, facilitando a manutenção, a troca de implementações e a realização de testes. A ideia central é: módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações.
+ Princípio da Inversão de Dependência (Dependency Inversion Principle) Em vez de o Controller depender diretamente de uma implementação concreta, ele deve se comunicar primeiro com uma interface ou abstração. Isso evita o acoplamento direto entre classes, facilitando a manutenção, a troca de implementações e a realização de testes. A ideia central é: módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações.
 
 Prefira Composição à Herança
 A herança deve ser usada apenas quando existe uma relação clara do tipo "é um" (is-a), por exemplo:
@@ -176,7 +176,9 @@ Definir entre Monólito ou Microserviços Escolher padrões de integração e co
 São boas práticas e diretrizes que orientam o desenvolvimento dentro da arquitetura escolhida. Devem ser seguidos sempre que possível, garantindo que o sistema permaneça padronizado, compreensível e de fácil manutenção. Exemplos: separação de responsabilidades, coesão de módulos, baixo acoplamento.
 
 # Aula 7 - 01/09/2025
+
 #Arquitetura de Software
+
 Quando falamos em construir software de qualidade, não dá para pensar só em código. É preciso ter uma arquitetura bem definida, que vai servir como base para o sistema crescer e se manter saudável ao longo do tempo.
 
 # Características da Arquitetura
