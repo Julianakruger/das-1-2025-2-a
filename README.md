@@ -123,9 +123,9 @@ public class Janelinha extends JFrame {
     }
 
 
-#Aula 3 - 11/08/2025 
+# Aula 3 - 11/08/2025 
 
-#Princípio da Inversão de Dependência (Dependency Inversion Principle) Em vez de o Controller depender diretamente de uma implementação concreta, ele deve se comunicar primeiro com uma interface ou abstração. Isso evita o acoplamento direto entre classes, facilitando a manutenção, a troca de implementações e a realização de testes. A ideia central é: módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações.
+# Princípio da Inversão de Dependência (Dependency Inversion Principle) Em vez de o Controller depender diretamente de uma implementação concreta, ele deve se comunicar primeiro com uma interface ou abstração. Isso evita o acoplamento direto entre classes, facilitando a manutenção, a troca de implementações e a realização de testes. A ideia central é: módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações.
 
 Prefira Composição à Herança
 A herança deve ser usada apenas quando existe uma relação clara do tipo "é um" (is-a), por exemplo:
@@ -140,24 +140,24 @@ A composição oferece mais flexibilidade, evita acoplamento excessivo e facilit
 
 --//--
 
-#Princípio de Demeter (Menor Conhecimento)
+# Princípio de Demeter (Menor Conhecimento)
 Também chamado de Law of Demeter.
 
 A ideia é evitar dependências desnecessárias e não acessar diretamente objetos internos de outros objetos. Fuja de variáveis globais e trabalhe com as informações locais e disponíveis no contexto atual.
 
 --//--
 
-#Princípio do Aberto/Fechado (Open/Closed Principle)
+# Princípio do Aberto/Fechado (Open/Closed Principle)
 Um objeto deve proteger seu comportamento para que ninguém possa quebrá-lo alterando diretamente sua lógica interna. A ideia é que quem cria a classe não quer que ela seja modificada, mas sim estendida com novas funcionalidades.
 
 Aberto para extensão, fechado para modificação Proteja o que a classe já faz, mas permita adicionar novos comportamentos sem alterar o código existente.
 
-#Aula 4 - 12/08/2025
+# Aula 4 - 12/08/2025
 SOLID:
 
 L: Princípio de substituição de Liskov - redefinição de métodos de classe base em classe filho (aplicado quando tem herança). Se há uma herança, com vários filhos, o código dos filhos deve ser feita de tal maneira a manter a compatibilidade com o pai, caso elas forem substituídas (sem quebrar o padrão que o pai tem) Filho(método x) -> Pai <- Filho2(Método x) | aplicar os dois filhos não quebra a classe
 
-#Aula 6 - 26/08/2025
+# Aula 6 - 26/08/2025
 Para desenvolver um bom software, é fundamental construir uma estrutura sólida. Essa estrutura é definida por meio da arquitetura de software, que pode ser entendida a partir de três dimensões principais:
 
 1 - Características da Arquitetura
@@ -175,28 +175,27 @@ Definir entre Monólito ou Microserviços Escolher padrões de integração e co
 3 - Princípios de Design
 São boas práticas e diretrizes que orientam o desenvolvimento dentro da arquitetura escolhida. Devem ser seguidos sempre que possível, garantindo que o sistema permaneça padronizado, compreensível e de fácil manutenção. Exemplos: separação de responsabilidades, coesão de módulos, baixo acoplamento.
 
-#Aula 7 - 01/09/2025
+# Aula 7 - 01/09/2025
 #Arquitetura de Software
 Quando falamos em construir software de qualidade, não dá para pensar só em código. É preciso ter uma arquitetura bem definida, que vai servir como base para o sistema crescer e se manter saudável ao longo do tempo.
 
-#Características da Arquitetura
+# Características da Arquitetura
 Essas são as chamadas qualidades não funcionais: disponibilidade, escalabilidade, segurança, desempenho, testabilidade… A verdade é: nenhum sistema consegue ser perfeito em tudo. Por isso, o arquiteto precisa escolher quais características são mais importantes para aquele projeto específico. Um exemplo bem clássico é decidir se o sistema vai ser Monolito ou Microserviços.
 
-#Princípios de Design
+# Princípios de Design
 Aqui entram as boas práticas que ajudam a manter o sistema limpo e organizado. São as “regras de convivência” do software, que guiam o time e evitam bagunça no futuro.
 
-#O Papel do Arquiteto de Software
-O arquiteto não é só “o cara que desenha caixinhas”. Ele tem responsabilidades bem práticas, como:
-Tomar decisões difíceis: escolher tecnologias, justificar o porquê de cada decisão, pesar prós e contras.
-Olhar para o código constantemente: identificar onde precisa refatorar e quando vale a pena mexer.
-Estar sempre atualizado: acompanhar tendências, ver como novas tecnologias podem ajudar (ou atrapalhar).
-Garantir que o time siga os padrões: não adianta só decidir, é preciso manter disciplina. Testes e revisões de código ajudam nisso.
-Ter experiência e bagagem: boas decisões vêm muito da prática e de já ter passado por situações parecidas.
-Conhecer o negócio: não adianta ser só técnico, precisa entender o contexto do cliente.
-Saber lidar com pessoas: motivar, inspirar, negociar e até lidar com política dentro da empresa.
-Em resumo, o arquiteto precisa ser tanto técnico quanto líder.
+# O Papel do Arquiteto de Software
+.O arquiteto não é só “o cara que desenha caixinhas”. Ele tem responsabilidades bem práticas, como:
+.Tomar decisões difíceis: escolher tecnologias, justificar o porquê de cada decisão, pesar prós e contras.
+.Olhar para o código constantemente: identificar onde precisa refatorar e quando vale a pena mexer.
+.Estar sempre atualizado: acompanhar tendências, ver como novas tecnologias podem ajudar (ou atrapalhar).
+.Garantir que o time siga os padrões: não adianta só decidir, é preciso manter disciplina. Testes e revisões de código ajudam nisso.
+.Ter experiência e bagagem: boas decisões vêm muito da prática e de já ter passado por situações parecidas.
+.Conhecer o negócio: não adianta ser só técnico, precisa entender o contexto do cliente.
+.Saber lidar com pessoas: motivar, inspirar, negociar e até lidar com política dentro da empresa.
 
-#DevOps na Arquitetura
+# DevOps na Arquitetura
 Hoje em dia, não dá para falar de arquitetura sem citar DevOps. A ideia é simples: aproximar desenvolvimento e operações para entregar valor mais rápido ao cliente.
 
 Planejamento: trabalhar em ciclos curtos, como no Scrum.
@@ -206,7 +205,7 @@ Responsabilidade compartilhada: se o sistema cair, ninguém “joga a bomba” p
 
 
 
-#Aula 02/09
+# Aula 02/09
 
 Resuma a diferençca entre: Arquitetura e Design
 
@@ -229,12 +228,12 @@ A ideia do arquiteto modelo T é: ter uma base mais larga de conhecimento, com u
 O texto também fala que muitos arquitetos acabam caindo em dois erros comuns: tentar ser especialista em tudo e não conseguir, ou ficar preso a conhecimentos antigos, sem se atualizar. Por isso, pensar como arquiteto é, em parte, saber abrir mão daquela especialização extrema em algumas tecnologias para ganhar uma visão mais ampla e atualizada, que realmente faça a diferença na hora de criar uma arquitetura que funcione para o negócio.
 
 
-#08/09
+# 08/09
 Compensações (Trade-offs)
 Sempre que se define uma arquitetura, não é possível atender a todas as demandas ao mesmo tempo.
 Como se costuma dizer: “não existem respostas certas ou erradas, apenas compensações.”
 
-#Arquitetura baseada em tópicos
+# Arquitetura baseada em tópicos
 .Funciona de forma semelhante a um grupo de família no WhatsApp
 .Segue um padrão parecido com o Observer:
 .Publisher → envia mensagens
@@ -243,17 +242,17 @@ Como se costuma dizer: “não existem respostas certas ou erradas, apenas compe
 .Caso o tópico saia do ar no momento da entrega, a mensagem pode ser perdida
 .A inclusão de novos subscribers é simples, sem necessidade de mudanças na arquitetura
 
-#Vantagens:
+# Vantagens:
 
 .Baixo acoplamento
 .Facilidade de expansão
 
-#Desvantagens:
+# Desvantagens:
 
 .Rastreabilidade de problemas limitada
 .Possibilidade de perda de mensagens
 
-#Arquitetura baseada em filas
+# Arquitetura baseada em filas
 .Modelo: Sender <-> Fila <-> Receiver
 .As mensagens são enviadas (enqueue) para a fila e consumidas (dequeue) pelo receiver
 .Relação de 1 sender para 1 receiver
@@ -267,12 +266,12 @@ Como se costuma dizer: “não existem respostas certas ou erradas, apenas compe
     .Conectar ambos
     .Isso gera maior impacto na arquitetura]
     
-#Vantagens:
+# Vantagens:
 
 .Maior rastreabilidade de problemas
 .Confiabilidade na entrega
 
-#Desvantagens:
+# Desvantagens:
 
 .Maior acoplamento
 .Maior complexidade de manutenção
