@@ -177,7 +177,7 @@ São boas práticas e diretrizes que orientam o desenvolvimento dentro da arquit
 
 # Aula 7 - 01/09/2025
 
-#Arquitetura de Software
+# Arquitetura de Software
 
 Quando falamos em construir software de qualidade, não dá para pensar só em código. É preciso ter uma arquitetura bem definida, que vai servir como base para o sistema crescer e se manter saudável ao longo do tempo.
 
