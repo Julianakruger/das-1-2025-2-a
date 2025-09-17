@@ -246,34 +246,34 @@ Como se costuma dizer: “não existem respostas certas ou erradas, apenas compe
 
 # Vantagens:
 
-.Baixo acoplamento
-.Facilidade de expansão
+- Baixo acoplamento
+- Facilidade de expansão
 
 # Desvantagens:
 
-.Rastreabilidade de problemas limitada
-.Possibilidade de perda de mensagens
+- Rastreabilidade de problemas limitada
+- Possibilidade de perda de mensagens
 
 # Arquitetura baseada em filas
-.Modelo: Sender <-> Fila <-> Receiver
-.As mensagens são enviadas (enqueue) para a fila e consumidas (dequeue) pelo receiver
-.Relação de 1 sender para 1 receiver
-.Cada receiver possui sua própria fila, independente dos demais
-.Garantia de entrega em ordem
-.A fila funciona como buffer, armazenando mensagens temporariamente
-.O receiver consulta a fila (polling) para buscar novas mensagens
-.Ao incluir um novo receiver, é necessário:
-    .Criar uma nova fila
-    .Ajustar o sender
-    .Conectar ambos
-    .Isso gera maior impacto na arquitetura]
+- Modelo: Sender <-> Fila <-> Receiver
+- As mensagens são enviadas (enqueue) para a fila e consumidas (dequeue) pelo receiver
+- Relação de 1 sender para 1 receiver
+- Cada receiver possui sua própria fila, independente dos demais
+- Garantia de entrega em ordem
+- A fila funciona como buffer, armazenando mensagens temporariamente
+- O receiver consulta a fila (polling) para buscar novas mensagens
+- Ao incluir um novo receiver, é necessário:
+    - Criar uma nova fila
+    - Ajustar o sender
+    - Conectar ambos
+    - Isso gera maior impacto na arquitetura]
     
 # Vantagens:
 
-.Maior rastreabilidade de problemas
-.Confiabilidade na entrega
+- Maior rastreabilidade de problemas
+- Confiabilidade na entrega
 
 # Desvantagens:
 
-.Maior acoplamento
-.Maior complexidade de manutenção
+- Maior acoplamento
+- Maior complexidade de manutenção
