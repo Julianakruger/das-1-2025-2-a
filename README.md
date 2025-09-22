@@ -277,3 +277,5 @@ Como se costuma dizer: “não existem respostas certas ou erradas, apenas compe
 
 - Maior acoplamento
 - Maior complexidade de manutenção
+
+file:///C:/Users/djuli/Downloads/Resumo%20Completo.pdf
