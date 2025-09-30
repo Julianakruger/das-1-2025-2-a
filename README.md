@@ -278,3 +278,11 @@ Como se costuma dizer: “não existem respostas certas ou erradas, apenas compe
 - Maior acoplamento
 - Maior complexidade de manutenção
 
+
+
+# 2° BIMESTRE
+
+https://learn.microsoft.com/pt-br/azure/architecture/patterns/circuit-breaker?wt.mc_id=AZ-MVP-5003638
+
+
+
