@@ -284,5 +284,88 @@ Como se costuma dizer: “não existem respostas certas ou erradas, apenas compe
 
 https://learn.microsoft.com/pt-br/azure/architecture/patterns/circuit-breaker?wt.mc_id=AZ-MVP-5003638
 
+# 06/10/2025
 
+Essas características cumprem três papéis principais:
+
+- Tratam de questões de design que não estão ligadas diretamente às funções do sistema, mas sim à forma como ele é construído.
+
+- Influenciam a estrutura do software, impactando decisões sobre componentes, integrações, segurança e desempenho.
+
+- Definem a qualidade e o sucesso do projeto, garantindo que o sistema seja confiável, seguro e sustentável a longo prazo.
+
+- Essas características podem ser agrupadas em três grandes categorias: operacionais, estruturais e transversais.
+
+Características Operacionais
+
+- São as que dizem respeito ao funcionamento do sistema no dia a dia.
+Incluem:
+
+- Disponibilidade – o tempo em que o sistema precisa estar ativo (por exemplo, 24 horas por dia).
+
+- Continuidade – a capacidade de se recuperar de falhas graves ou desastres.
+
+- Desempenho – o tempo de resposta e a eficiência ao processar informações.
+
+- Recuperabilidade – o tempo necessário para voltar ao ar após uma falha.
+
+- Confiabilidade e segurança – a capacidade de funcionar corretamente, sem falhas que comprometam dados.
+
+- Robustez – a resistência a erros ou interrupções inesperadas.
+
+- Escalabilidade – a capacidade de crescer e lidar com mais usuários ou demandas sem perder qualidade.
+
+Características Estruturais
+
+Estão relacionadas à organização interna do código e à sua facilidade de evolução.
+Envolvem:
+
+- Configuração – facilidade de ajustar o sistema para diferentes contextos.
+
+- Extensibilidade – quão simples é adicionar novas funcionalidades.
+
+- Reutilização – aproveitamento de partes do sistema em outros projetos.
+
+- Portabilidade – possibilidade de rodar o software em diferentes ambientes.
+
+- Manutenibilidade – facilidade de corrigir erros e fazer melhorias.
+
+- Atualização – facilidade para lançar novas versões sem grandes impactos.
+
+Características Transversais
+
+Essas atravessam todo o sistema, afetando várias partes ao mesmo tempo.
+Incluem:
+
+- Acessibilidade – tornar o sistema utilizável por todos, inclusive pessoas com deficiência.
+
+- Autenticação e autorização – controle de acesso e permissões de usuários.
+
+- Privacidade e segurança – proteção dos dados e comunicações.
+
+- Legalidade – cumprimento de normas e leis, como a LGPD.
+
+- Usabilidade – facilidade de uso e boa experiência para o usuário.
+
+- Armazenamento – gerenciamento correto de dados, inclusive exclusão quando necessário.
+
+Além disso, a ISO (Organização Internacional para Padronização) define uma série de categorias que ajudam a medir a qualidade de um software. Entre elas estão:
+
+- Eficiência de desempenho (resposta e uso de recursos),
+
+- Compatibilidade (funcionar bem com outros sistemas),
+
+- Usabilidade,
+
+- Confiabilidade,
+
+- Segurança,
+
+- Manutenibilidade, e
+
+- Portabilidade.
+
+Porém, na prática, o arquiteto precisa lidar com conflitos entre características — chamados de trade-offs. Melhorar a segurança, por exemplo, pode reduzir o desempenho, já que criptografar dados exige mais processamento. Por isso, o papel do arquiteto é encontrar o equilíbrio.
+
+Não existe uma arquitetura “perfeita”. O objetivo é construir a arquitetura mais equilibrada possível, que atenda às necessidades do negócio e ainda permita evolução contínua. Boas arquiteturas são aquelas que mudam com facilidade, acompanhando as descobertas e aprendizados do projeto.
 
