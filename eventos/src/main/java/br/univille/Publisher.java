@@ -12,24 +12,26 @@ public class Publisher {
         var servidor = "sbdas12025a.servicebus.windows.net";
         var topicName = "topic-das1-a";
 
-       // DefaultAzureCredential credential =
-         //   new DefaultAzureCredentialBuilder().build();
+        
 
+        //DefaultAzureCredential credential = 
+        //    new DefaultAzureCredentialBuilder().build();
+        
         String chave = System.getenv("CHAVE");
-        ServiceBusSenderClient senderClient =
+
+        ServiceBusSenderClient senderClient = 
             new ServiceBusClientBuilder()
             .fullyQualifiedNamespace(servidor)
             .transportType(AmqpTransportType.AMQP_WEB_SOCKETS)
-          //  .credential(credential)
-          .connectionString(chave)
+        //    .credential(credential)
+            .connectionString(chave)
             .sender()
             .topicName(topicName)
             .buildClient();
 
         senderClient.sendMessage(
             new ServiceBusMessage(
-            "JULIANA: Opa"));
-
+                "WALTER: nao acredito"));
 
     }
 }

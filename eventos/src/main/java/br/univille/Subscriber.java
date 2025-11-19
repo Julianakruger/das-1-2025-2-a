@@ -7,13 +7,13 @@ import com.azure.messaging.servicebus.models.ServiceBusReceiveMode;
 
 public class Subscriber {
     public static void main(String[] args) {
-            var servidor = "sbdas12025a.servicebus.windows.net";
-            var topicName = "topic-das1-a";
+        var servidor = "sbdas12025a.servicebus.windows.net";
+        var topicName = "topic-das1-a";
 
-            String chave = System.getenv("CHAVE");
-            var subscription = "subscription-julianakruger";
-
-            ServiceBusProcessorClient processorClient =
+        String chave = System.getenv("CHAVE");
+        var subscription = "subscription-waltercoan";
+        
+        ServiceBusProcessorClient processorClient =
             new ServiceBusClientBuilder()
             .fullyQualifiedNamespace(servidor)
             .connectionString(chave)
@@ -29,7 +29,7 @@ public class Subscriber {
                 context.complete();
             })
             .processError(context ->{
-                System.out.println("deu errado");
+                System.out.println("deu ruim");
             })
             .buildProcessorClient();
         

@@ -2,7 +2,7 @@ package br.univille.singleton;
 
 public class Cliente {
     public static void main(String[] args) {
-        var segredo = "VAI GREMIO";
+        var segredo = "Palmeiras tem mundial";
 
         var singleton = Singleton.getInstance();
         singleton.setSegredo(segredo);
