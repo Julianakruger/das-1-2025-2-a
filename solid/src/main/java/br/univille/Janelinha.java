@@ -14,7 +14,7 @@ public class Janelinha extends JFrame{
     private Controlador controlador;
 
     public Janelinha() {
-        String titulo = "Eu nao acredito";
+        String titulo = "Opa";
         setTitle(titulo);
         setSize(500,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
