@@ -369,3 +369,92 @@ Porém, na prática, o arquiteto precisa lidar com conflitos entre característi
 
 Não existe uma arquitetura “perfeita”. O objetivo é construir a arquitetura mais equilibrada possível, que atenda às necessidades do negócio e ainda permita evolução contínua. Boas arquiteturas são aquelas que mudam com facilidade, acompanhando as descobertas e aprendizados do projeto.
 
+ # 07/10/2025 
+https://learn.microsoft.com/pt-br/azure/architecture/patterns/cqrs
+
+CQRS
+(Segregação de Responsabilidade de Comando e Consulta) é um padrão de design que segrega operações de leitura e gravação de um armazenamento de dados em modelos de dados separados. Essa abordagem permite que cada modelo seja otimizado de forma independente e pode melhorar o desempenho, a escalabilidade e a segurança de um aplicativo.
+
+Usado quando atinge o limite da escalabilidade vertical da máquina
+Estância primária - Somente para escrever (servidor 1)
+Replica de leitura - Somente para ler (servidor 2)
+O sistema poderá estar conectado com 2,3 ou mais bancos de dados
+Podendo ter atrasos, pois a comunicação entre os bancos é assincrona
+
+ # 09/10/2025 
+https://learn.microsoft.com/pt-br/azure/architecture/patterns/retry
+
+Estratégias de repetição
+Se um aplicativo detectar uma falha ao tentar enviar uma solicitação para um serviço remoto, ele poderá lidar com falhas usando as seguintes estratégias:
+
+CANCELAR (cancel)
+Se a falha indica não ser transitória ou provavelmente não será bem-sucedida se for repetida, o aplicativo deve cancelar a operação e relatar uma exceção.
+
+TENTE NOVAMENTE IMEDIATAMENTE (retry immediately)
+Se a falha específica relatada for incomum ou rara, como um pacote de rede corrompido durante a transmissão, o melhor curso de ação poderá repetir imediatamente a solicitação.
+
+TENTAR NOVAMENTE APÓS ATRASO (retry after delay)
+Se a falha for causada por uma das falhas mais comuns de conectividade ou ocupado, a rede ou o serviço poderá precisar de um curto período enquanto os problemas de conectividade forem corrigidos ou a lista de pendências de trabalho for desmarcada, portanto, atrasar programaticamente a repetição é uma boa estratégia. Em muitos casos, deve ser escolhido o período entre as novas tentativas a fim de distribuir solicitações de várias instâncias do aplicativo da maneira mais uniforme possível para reduzir a chance de um serviço ocupado continuar sobrecarregado.
+
+A GRANDE BOLA DE LAMA 
+É um padrão de software que descreve um sistema desorganizado, sem uma estrutura arquitetural clara, onde componentes estão fortemente acoplados. Ele surge da falta de planejamento a longo prazo, levando a um código difícil de entender, manter e estender, tornando as alterações arriscadas e trabalhosas. 
+
+ARQUITETURA UNITÁRIA
+Software roda em um único computador
+Sistemas embarcados (TV, geladeira, eletrodomésticos)
+
+CLIENTE/SERVIDOR
+O modelo cliente/servidor é uma arquitetura em que um cliente (um aplicativo ou dispositivo que solicita um serviço) se comunica com um servidor (um computador ou software que fornece o serviço e os dados). Os clientes iniciam as solicitações, e os servidores respondem com os recursos, dados ou serviços solicitados, como um navegador que pede uma página da web a um servidor web. 
+
+DESKTOP + SERVIDOR DE BANCO DE DADOS (Cliente/ Servidor/ Database Centric)
+Um grande Banco de dados parrudo com outras máquinas conectadas, cada máquina tem o software instalado nela mesmo. A lógica fica instalado na máquina (telas de cadastro) e no banco de dados (store procedure).
+Para atualização, primeiro se atualiza o banco de dados, e depois se atualiza máquina por máquina.
+
+NAVEGADOR + SERVIDOR WEB 
+(web 1.0)
+Banco de dados <===> Web Server <===> Máquina (navegação de HTML)
+Cliente / Servidor / Web Server
+
+web 2.0 (sistema distribuido)
+máquina usuário recebe HTML e Json (aplicação rodando no cliente)
+Web Server se torna uma API Rest (aplicação rodando no web server)
+
+ # 10/10/2025 
+https://learn.microsoft.com/pt-br/azure/architecture/patterns/retry
+
+TRÊS CAMADAS
+Uma arquitetura que ficou bem popular no final dos anos 1990 foi uma arquitetura de três camadas, que fornecia mais camadas de separação. Quando ferramentas como servidores de aplicação se tornaram populares em Java e .NET, as empresas começaram a criar ainda mais camadas na topologia: uma camada de banco de dados usando um servidor de banco de dados com capacidade industrial, uma camada de aplicação gerenciada por um servidor de aplicação, um front-end escrito em HTML gerado e cada vez mais JavaScript, conforme suas capacidades expandiam.
+
+ARQUITETURAS MONOLÍTICAS VERSUS DISTRIBUÍDAS
+Monolíto - sistema onde todas as funcionalidades estão em uma única base de código centralizado
+
+LOG DISTRIBUÍDO
+Um log distribuído é um registro de eventos ou mensagens mantido de forma consistente entre vários nós (máquinas) em um sistema distribuído. Ele funciona como uma sequência ordenada e imutável de registros que todos os participantes conseguem ler e seguir na mesma ordem.
+
+TRANSAÇÕES DISTRIBUIDAS
+Garante que todas as partes envolvidas em uma operação completem com sucesso ou todas sejam revertidas.
+
+# 20/10/2025 
+
+A arquitetura em camadas é um dos estilos mais comuns no desenvolvimento de software devido à sua simplicidade, familiaridade e baixo custo. Ela organiza o sistema em níveis, cada um com responsabilidades específicas, normalmente divididos em apresentação, negócios, persistência e banco de dados. Esse formato reflete naturalmente a estrutura de muitas organizações, o que contribui para sua adoção.
+
+Há dois modelos de comunicação entre camadas: o estrito, em que cada camada só acessa a imediatamente inferior, e o relaxado, que permite saltos entre camadas, oferecendo flexibilidade, mas podendo aumentar o acoplamento. Entre suas vantagens estão a clareza organizacional, a separação de responsabilidades e a facilidade de testes. No entanto, ela pode se tornar rígida, dificultar escalabilidade independente e não se encaixar bem em arquiteturas distribuídas ou orientadas a eventos. É mais adequada para sistemas tradicionais de CRUD e aplicações corporativas, mas menos indicada para cenários modernos que exigem reatividade e alta flexibilidade.
+
+# 27/10/2025  
+
+PIPELINE
+É uma sequência de etapas organizadas, onde cada etapa recebe uma entrada, processa algo e entrega a saída para a próxima etapa. É como uma “linha de montagem”, em que cada fase executa uma parte do trabalho até completar o resultado final. O mesmo é ideal para processamento contínuo, transformações em fluxo e tarefas que podem ser divididas em passos claros. Ele promove baixo acoplamento, alta coesão e reutilização de componentes.
+
+# 03/11/2025 
+
+ARQUITETURA MICROKERNEL
+A arquitetura Microkernel divide o sistema em um núcleo mínimo, que contém apenas as funções essenciais, e um conjunto de plugins, que adicionam ou estendem funcionalidades. O núcleo é estável e simples, os plugins são modulares, podem ser trocados e evoluem sem afetar o restante do sistema. Esse estilo é ideal para plataformas extensíveis, como IDEs e sistemas que precisam de personalização constante.
+
+# 10/11/2025
+
+ARQUITETURA DE MICROSSERVIÇOS
+É um estilo no qual um sistema é dividido em serviços pequenos, independentes e implantáveis de forma autônoma. Cada microsserviço implementa uma função de negócio específica, possui seu próprio banco de dados e se comunica com outros por meio de APIs.
+
+Permite entregas contínuas, escalabilidade independente e maior autonomia das equipes. Reduzindo o acoplamento entre partes do sistema.
+
+Muito utilizado quando o sistema é grande e tende a crescer mais. A arquitetura de microsserviços vai estrangulando a funcionalidade do sistema antigo.
